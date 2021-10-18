@@ -1,0 +1,91 @@
+.course {
+  background: #24385b;
+  margin: 10px;
+  width: max-content;
+  border-radius: 15px;
+}
+
+.course .course--body {
+  display: grid;
+  padding: 15px;
+  color: white;
+  grid-template-areas:
+    "img name slot"
+    "- teacher teacher";
+  grid-template-rows: 55px 35px;
+  grid-template-columns: 60px 150px 50px;
+  place-items: center;
+}
+
+.course--body .course-img {
+  grid-area: img;
+  width: 40px;
+  height: 40px;
+}
+
+.course--body .course-name {
+  grid-area: name;
+}
+
+.course--body .course-teacher {
+  grid-area: teacher;
+  display: flex;
+  margin-bottom: 10px;
+  color: #8da2c0;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+.course--body .course-teacher .teacher-img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.course-teacher .teacher-img img {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.course--footer {
+  background: rgba(18, 31, 61, 0.5);
+  padding: 15px;
+  color: #8da2c0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.course--footer .course-rating {
+  letter-spacing: -12px;
+}
+
+.course--footer .course--details div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.course--footer .course--buttons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.course--footer .course--buttons button {
+  width: 50%;
+  height: 35px;
+  background: transparent;
+  border: 0;
+}
+
+.course--buttons button:hover {
+  cursor: pointer;
+}
+
+.button-blue {
+  color: #33b1ff;
+}
+
+.button-yellow {
+  color: #f6e01c;
+}
